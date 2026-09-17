@@ -1,4 +1,4 @@
-# CarePoint Pharmacy official.github.io
+# CarePoint Pharmacy
 
 A modern, responsive pharmacy website built with **HTML, CSS and vanilla JavaScript**.
 
