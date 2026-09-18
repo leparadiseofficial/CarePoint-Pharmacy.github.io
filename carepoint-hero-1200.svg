@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 520 260" role="img" aria-labelledby="title desc">
+  <title id="title">CarePoint Pharmacy healthcare illustration</title>
+  <desc id="desc">A pharmacy cross with simple healthcare shapes.</desc>
+  <rect width="520" height="260" rx="30" fill="#0d5661"/>
+  <circle cx="260" cy="130" r="86" fill="#16818b"/>
+  <rect x="235" y="70" width="50" height="120" rx="10" fill="white"/>
+  <rect x="205" y="105" width="110" height="50" rx="10" fill="white"/>
+  <circle cx="112" cy="70" r="18" fill="#bde7e7"/>
+  <circle cx="408" cy="190" r="22" fill="#bde7e7"/>
+  <path d="M92 178h40M112 158v40M386 58h44M408 36v44" stroke="#bde7e7" stroke-width="7" stroke-linecap="round"/>
+</svg>
