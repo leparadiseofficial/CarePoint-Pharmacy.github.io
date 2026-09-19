@@ -1,270 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-  <title>CarePoint Pharmacy | Your Health, Our Priority</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  <meta
-    name="description"
-    content="CarePoint Pharmacy - quality health, wellness and personal care products."
-  >
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+        }
 
-  <link rel="stylesheet" href="style.css">
+        header {
+            background-color: #222;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        main {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: #222;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .contact-button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container nav">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-      <a class="logo" href="index.html" aria-label="CarePoint Pharmacy Home">
-        <span>✚</span> CarePoint
-        <small>PHARMACY</small>
-      </a>
+    <main>
+        <h1>Welcome to My Website</h1>
 
-      <button
-        class="menu-btn"
-        type="button"
-        aria-label="Open menu"
-        aria-controls="navLinks"
-        aria-expanded="false"
-      >
-        ☰
-      </button>
+        <p>
+            Welcome to my website. Use the navigation above to explore the pages.
+        </p>
 
-      <nav id="navLinks" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="products.html">Products</a>
-        <a href="prescription.html">Prescription</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a class="cart-link" href="cart.html">
-          Cart <b id="cartCount">0</b>
+        <a class="contact-button" href="contact.html">
+            Contact Me
         </a>
-      </nav>
+    </main>
 
-    </div>
-  </header>
-
-
-  <main>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container hero-grid">
-
-        <div>
-          <span class="eyebrow">TRUSTED COMMUNITY PHARMACY</span>
-
-          <h1>
-            Your health.<br>
-            <span>Your care.</span><br>
-            Your CarePoint.
-          </h1>
-
-          <p>
-            Shop everyday health and wellness products, send us your
-            prescription enquiry, and get friendly support from our
-            pharmacy team.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="products.html">
-              Shop Products
-            </a>
-
-            <a class="btn secondary" href="prescription.html">
-              Prescription Enquiry
-            </a>
-          </div>
-
-          <div class="trust">
-            <span>✓ Friendly service</span>
-            <span>✓ Quality products</span>
-            <span>✓ Convenient care</span>
-          </div>
-        </div>
-
-
-        <!-- Responsive image -->
-        <div class="hero-card">
-
-          <picture>
-            <source
-              media="(min-width: 1000px)"
-              srcset="images/hero/carepoint-hero-1200.svg"
-            >
-
-            <source
-              media="(min-width: 600px)"
-              srcset="images/hero/carepoint-hero-800.svg"
-            >
-
-            <img
-              src="images/hero/carepoint-hero-480.svg"
-              srcset="
-                images/hero/carepoint-hero-480.svg 480w,
-                images/hero/carepoint-hero-800.svg 800w,
-                images/hero/carepoint-hero-1200.svg 1200w
-              "
-              sizes="
-                (min-width: 1000px) 50vw,
-                (min-width: 600px) 80vw,
-                100vw
-              "
-              alt="CarePoint Pharmacy healthcare and wellness products"
-              width="1200"
-              height="600"
-              loading="eager"
-              decoding="async"
-            >
-          </picture>
-
-          <div class="cross">✚</div>
-
-          <h2>Care starts here.</h2>
-
-          <p>
-            Simple, accessible healthcare for you and your family.
-          </p>
-
-          <a href="contact.html">
-            Talk to CarePoint →
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Features -->
-    <section class="features">
-      <div class="container feature-grid">
-
-        <article>
-          <span>🚚</span>
-          <h3>Convenient shopping</h3>
-          <p>
-            Browse selected health and wellness products online.
-          </p>
-        </article>
-
-        <article>
-          <span>📋</span>
-          <h3>Prescription enquiries</h3>
-          <p>
-            Send prescription details for pharmacy review.
-          </p>
-        </article>
-
-        <article>
-          <span>💙</span>
-          <h3>Care you can trust</h3>
-          <p>
-            We put clear information and customer care first.
-          </p>
-        </article>
-
-      </div>
-    </section>
-
-
-    <!-- Categories -->
-    <section class="section">
-      <div class="container">
-
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">POPULAR CATEGORIES</span>
-            <h2>Care for every day</h2>
-          </div>
-
-          <a href="products.html">
-            View all products →
-          </a>
-        </div>
-
-
-        <div class="category-grid">
-
-          <a href="products.html?category=Pain%20Relief">
-            💊
-            <strong>Pain Relief</strong>
-            <span>Everyday essentials</span>
-          </a>
-
-          <a href="products.html?category=Vitamins">
-            🌿
-            <strong>Vitamins</strong>
-            <span>Wellness support</span>
-          </a>
-
-          <a href="products.html?category=Personal%20Care">
-            🧴
-            <strong>Personal Care</strong>
-            <span>Daily care</span>
-          </a>
-
-          <a href="products.html?category=First%20Aid">
-            🩹
-            <strong>First Aid</strong>
-            <span>Home essentials</span>
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- Footer -->
-  <footer>
-
-    <div class="container footer-grid">
-
-      <div>
-        <div class="logo light">
-          ✚ CarePoint
-          <small>PHARMACY</small>
-        </div>
-
-        <p>Your health, our priority.</p>
-      </div>
-
-
-      <div>
-        <h4>Quick links</h4>
-
-        <a href="products.html">Products</a>
-        <a href="prescription.html">Prescription</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-
-      <div>
-        <h4>Contact</h4>
-
-        <p>Mon–Sat: 08:00–18:00</p>
-        <p>hello@carepoint.co.za</p>
-      </div>
-
-    </div>
-
-
-    <div class="copyright">
-      © 2026 CarePoint Pharmacy. Demo website.
-    </div>
-
-  </footer>
-
-
-  <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 My Website</p>
+    </footer>
 
 </body>
 </html>
