@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Products | CarePoint Pharmacy</title><link rel="stylesheet" href="style.css"></head>
-<body><header class="header"><div class="container nav"><a class="logo" href="index.html"><span>✚</span> CarePoint <small>PHARMACY</small></a><button class="menu-btn" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button><nav id="navLinks"><a href="index.html">Home</a><a class="active" href="products.html" aria-current="page">Products</a><a href="prescription.html">Prescription</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="cart-link" href="cart.html">Cart <b id="cartCount">0</b></a></nav></div></header>
+<body><header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html"><span>✚</span> CarePoint <small>PHARMACY</small></a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
+    <nav id="navLinks" aria-label="Main navigation">
+      <a class="" href="index.html">Home</a>
+      <a class="active" href="products.html" aria-current="page">Products</a>
+      <a class="" href="prescription.html">Prescription</a>
+      <a class="" href="about.html">About</a>
+      <a class="" href="contact.html">Contact</a>
+      <a class="cart-link" href="cart.html">Cart <b id="cartCount">0</b></a>
+    </nav>
+  </div>
+</header>
 <main><section class="page-hero"><div class="container"><span class="eyebrow">CAREPOINT STORE</span><h1>Health & wellness products</h1><p>Browse our demo catalogue. Prescription medicines are handled through a pharmacy review process.</p></div></section>
 <section class="section"><div class="container"><div class="toolbar"><label class="visually-hidden" for="searchInput">Search products</label><input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products"><label class="visually-hidden" for="categoryFilter">Filter products by category</label><select id="categoryFilter" aria-label="Filter products by category"><option value="All">All categories</option><option>Pain Relief</option><option>Vitamins</option><option>Personal Care</option><option>First Aid</option><option>Family Care</option></select></div><div id="productGrid" class="product-grid" aria-live="polite"></div></div></section></main>
 <footer><div class="copyright">© 2026 CarePoint Pharmacy. Demo website.</div></footer><script src="script.js"></script></body></html>
