@@ -13,7 +13,14 @@ const money = (n) => "R" + n.toFixed(2);
 
 function getCart() {
   try {
-    return JSON.parse(localStorage.getItem("carepointCart") || "[]");
+    const raw = JSON.parse(localStorage.getItem("carepointCart") || "[]");
+    if (!Array.isArray(raw)) return [];
+    return raw.filter((item) =>
+      Number.isInteger(item?.id) &&
+      Number.isInteger(item?.qty) &&
+      item.qty > 0 &&
+      products.some((product) => product.id === item.id)
+    );
   } catch {
     return [];
   }
@@ -173,7 +180,7 @@ function removeItem(id) {
 }
 
 function demoCheckout() {
-  showMessage("Demo checkout: please contact CarePoint to complete an order.");
+  window.location.href = "enquiry.html";
 }
 
 function setupForms() {
