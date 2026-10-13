@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leparadiseofficial.github.io/CarePoint-Pharmacy.github.io/sitemap.xml
